@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author DAM_M
  */
-public class Ejercicio15_Tema2 {
+public class Ejercicio5_1Tema2 {
 
     /**
      * @param args the command line arguments
@@ -22,7 +22,7 @@ public class Ejercicio15_Tema2 {
         Scanner sc = new Scanner(System.in);
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter("nombres.txt"));
+            bw = new BufferedWriter(new FileWriter("nombres.txt",true));
             System.out.print("Nombre: ");
             String nombre = sc.nextLine();
 
@@ -30,7 +30,7 @@ public class Ejercicio15_Tema2 {
             int edad = sc.nextInt();
             String linea = nombre + ", " + edad + " años";
             System.out.println("Añadida nueva línea: " + linea);
-            bw.write(linea);
+            bw.write(linea + "\n");
         } catch (IOException e) {
             System.out.println("No se ha podido escribir en el fichero");
         } finally {

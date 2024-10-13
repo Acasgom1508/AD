@@ -11,7 +11,7 @@ import java.io.IOException;
  *
  * @author DAM_M
  */
-public class Ejercicio13_Tema2 {
+public class Ejercicio3_1Tema2 {
 
     /**
      * @param args the command line arguments

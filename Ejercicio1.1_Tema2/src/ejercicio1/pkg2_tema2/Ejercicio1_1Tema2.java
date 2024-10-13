@@ -10,7 +10,7 @@ import java.io.File;
  *
  * @author DAM_M
  */
-public class Ejercicio12_Tema2 {
+public class Ejercicio1_1Tema2 {
 
     /**
      * @param args the command line arguments
