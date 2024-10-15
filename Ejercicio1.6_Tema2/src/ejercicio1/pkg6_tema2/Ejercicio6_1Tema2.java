@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Ejercicio16_Tema2 {
+public class Ejercicio6_1Tema2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Scanner arch = null;
@@ -23,8 +23,8 @@ public class Ejercicio16_Tema2 {
             arch = new Scanner(new FileReader(archivo));
             while (arch.hasNext()) {
                 System.out.print(arch.nextLine());
+                System.out.println("");
             }
-            System.out.println("\n");
         } catch (IOException e) {
             System.out.println("No se ha podido leer el archivo");
         } finally {
