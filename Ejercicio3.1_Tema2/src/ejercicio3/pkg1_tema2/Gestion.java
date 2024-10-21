@@ -8,6 +8,10 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+/**
+ *
+ * @author DAM_M
+ */
 public class Gestion extends DefaultHandler {
 
     boolean imprimir = false;
