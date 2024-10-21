@@ -15,7 +15,7 @@ import org.xml.sax.SAXException;
 
 /**
  *
- * @author diego
+ * @author DAM_M
  */
 public class Ejercicio23_Tema2  {
 
