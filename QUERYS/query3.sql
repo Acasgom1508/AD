@@ -46,9 +46,10 @@ WHERE
 
 /* 11. Devuelve un listado con los clientes que han realizado algún pedido pero no han realizado ningún pago. */
 
-SELECT C.NOMBRE_CLIENTE
-FROM
+SELECT DISTINCT C.NOMBRE_CLIENTE
+FROM 
     CLIENTE C
+    JOIN PEDIDO D ON C.CODIGO_CLIENTE = D.CODIGO_CLIENTE
     LEFT JOIN PAGO P ON C.CODIGO_CLIENTE = P.CODIGO_CLIENTE
 WHERE 
     P.CODIGO_CLIENTE IS NULL;
