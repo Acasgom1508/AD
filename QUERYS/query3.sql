@@ -1,4 +1,4 @@
--- Active: 1729582633344@@127.0.0.1@3306@jardineria
+-- Active: 1732647373055@@127.0.0.1@3306@jardineria
 /* 7. Devuelve un listado que muestre los empleados que no tienen una oficina asociada y los que no tienen un cliente asociado. */
 
 SELECT E.NOMBRE
@@ -46,10 +46,9 @@ WHERE
 
 /* 11. Devuelve un listado con los clientes que han realizado algún pedido pero no han realizado ningún pago. */
 
-SELECT DISTINCT C.NOMBRE_CLIENTE
-FROM 
+SELECT C.NOMBRE_CLIENTE
+FROM
     CLIENTE C
-    JOIN PEDIDO D ON C.CODIGO_CLIENTE = D.CODIGO_CLIENTE
     LEFT JOIN PAGO P ON C.CODIGO_CLIENTE = P.CODIGO_CLIENTE
 WHERE 
     P.CODIGO_CLIENTE IS NULL;

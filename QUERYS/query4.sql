@@ -1,5 +1,5 @@
--- Active: 1729582633344@@127.0.0.1@3306@jardineria
-/* 13. Calcula la suma de la cantidad total de todos los productos que aparecen en cada uno de los pedidos. */
+-- Active: 1732647373055@@127.0.0.1@3306@jardineria
+//* 13. Calcula la suma de la cantidad total de todos los productos que aparecen en cada uno de los pedidos. */
 
 SELECT DP.CODIGO_PEDIDO AS CODIGO_PEDIDO, SUM(P.PRECIO_VENTA * DP.CANTIDAD) AS PRECIO_TOTAL
 FROM PRODUCTO P
