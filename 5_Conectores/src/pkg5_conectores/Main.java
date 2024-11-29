@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author anton
+ * @author antonio
  */
 public class Main {
 
